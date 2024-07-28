@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# Bỏ qua tất cả các tệp .dll
+*.dll
+
+# Bỏ qua thư mục bin và obj
+bin/
+obj/
+
+# Bỏ qua các tệp cấu hình người dùng
+*.user
+*.suo
+
+# Bỏ qua các tệp log
+*.log
+
+*.vsidx

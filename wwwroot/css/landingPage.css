@@ -1,0 +1,214 @@
+﻿.container-text-banner {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-banner1 {
+    color: black;
+    -webkit-text-stroke: 2px #f98a33;
+    font-weight: 800;
+}
+
+.text-banner2 {
+    color: white;
+}
+
+.banner-human {
+    position: absolute;
+    text-align: end;
+}
+
+    .banner-human img {
+        max-width: 80%;
+    }
+
+.aboutUs-icon {
+    width: 50px;
+}
+
+.background-color {
+    background: var(--bs-color-orange);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.wcu-container-gird {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    background: var(--back-color2);
+    padding: 40px;
+    border-radius: 57px 0 0 57px;
+    border: 2px solid var(--bs-color-orange);
+}
+
+.wcu-title {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+    .wcu-title p {
+        width: 600px;
+    }
+
+
+.wcu-container-fluid-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.wcu-grid-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 57px 57px 0;
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: var(--bs-color-orange);
+}
+
+.wcu-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 2fr 5fr;
+}
+
+.ms-container-fluid-gird {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.ms-container {
+    border-radius: 14px;
+    border: 2px solid var(--bs-color-orange);
+    border-bottom: 0px;
+    padding: 50px 50px 0 50px;
+    background: var(--back-color2);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+
+    .ms-container::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 0 13px;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: var(--bs-color-orange);
+        width: 50px;
+        height: 30px;
+        left: 0;
+    }
+
+    .ms-container::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 13px 0;
+        border-width: 0 0 2px 0;
+        border-style: solid;
+        border-color: var(--bs-color-orange);
+        width: 50px;
+        height: 30px;
+        right: 0;
+    }
+
+.ms-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container-fluid-bt {
+    border: 2px solid var(--bs-color-orange);
+    border-bottom: 4px solid black;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+    background: var(--back-color1);
+}
+
+.ms-container .bt-container {
+    margin: 20px 20px 0 20px;
+    background: var(--back-color3);
+    color: var(--text-color2);
+    transition: transform 0.3s ease;
+}
+
+.ms-container .btn {
+    color: var(--text-color2);
+}
+
+.ms-container .bt-container:hover {
+    transform: scale(1.1);
+    grid-column: span 2;
+}
+
+.responsive-banner {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.fbc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(276px,1fr));
+    gap:50px;
+}
+.fbc-container {
+    background: linear-gradient(178deg, var(--back-color2) 22%, black 126%);
+    border-bottom: 5px solid var(--bs-color-orange);
+}
+.fbc-container > *{
+    margin : 16px;
+}
+.fbc-container > *:last-child {
+    margin: 25px 0 15px 0; 
+}
+.fbc-grid img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+.fbc-container > p:first-child {
+    height:72px;
+}
+
+.fbc-container:nth-child(n + 5) {
+    display: none;
+}
+.fbc-container{
+    opacity : 0.2;
+}
+.fbc-container.show {
+    transform: scale(1.15);
+    opacity : 1;
+}
+#prevBtn, #nextBtn {
+    position: absolute;
+    bottom: 0;
+    cursor : pointer;
+    top: 50%;
+}
+.contact-us {
+    background: linear-gradient(45deg, #140538, transparent);
+    margin: auto;
+}
+/*.contact-us input {
+    background: var(--back-color2);
+}*/
+#nextBtn {
+    right: 10px;
+}

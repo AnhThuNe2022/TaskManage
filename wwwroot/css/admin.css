@@ -1,0 +1,128 @@
+﻿#content-body {
+    background: var(--back-color2);
+    font-family: var(--bs-body-font-family2) !important;
+}
+h4 {
+    font-weight: 600 !important;
+    color: var(--text-color4);
+}
+th {
+    color: var(--text-color3);
+}
+td{
+
+}
+.bg-gradient-primary {
+    background-color: var(--back-color1) !important;
+    background-image: linear-gradient(180deg, var(--back-color1) 10%, var(--back-color1) 100%) !important;
+    background-size: cover;
+}
+
+li.active > .nav-link {
+    background: var(--back-color2);
+    /* align-items: center; */
+    /* margin-left: 29px; */
+    color: var(--text-color1) !important;
+    border-radius: 50px 0 0 50px;
+    width: 80%;
+}
+
+.sidebar-dark .nav-item.active .nav-link i {
+    color: var(--text-color1) !important;
+}
+
+
+/*---------------------*/
+li.nav-item.active {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item.active + li.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--back-color1);
+    border-radius: 0 20px 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.nav-item.active + li.nav-item {
+    background: var(--back-color2);
+}
+.contain-border1 {
+    padding: 20px;
+    width: 33.3%;
+    font-weight: 600;
+    border-radius: 25px 25px;
+    color: var(--text-color2);
+    background-color: var(--back-color5);
+    background-image: linear-gradient(180deg, var(--back-color5) 10%, var(--back-color5) 100%) !important;
+}
+.contain-border2 {
+    padding: 20px;
+    width: 33.3%;
+    font-weight: 600;
+    border-radius: 25px 25px;
+    color: var(--text-color2);
+    background-color: var(--back-color3);
+    background-image: linear-gradient(180deg, var(--back-color3) 10%, var(--back-color3) 100%) !important;
+}
+.contain-border3 {
+    padding: 20px;
+    width: 33.3%; 
+    font-weight: 600;
+    border-radius: 25px 25px;
+    color: var(--text-color2);
+    background-color: var(--back-color4);
+    background-image: linear-gradient(180deg, var(--back-color4) 10%, var(--back-color4) 100%) !important;
+}
+.right-bar .content .content-left {
+    background: var(--back-color4);
+    display: flex;
+    border-radius: 25px 11px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+    color: white;
+}
+.right-bar .content div > p {
+    color: gray;
+}
+
+.right-bar .content {
+    background: var(--back-color6);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px 25px;
+}
+.right-bar .content .content-left > i {
+    text-align:center;
+}
+.container-boder {
+    background: var(--back-color6);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px 25px;
+}
+:root {
+    --bs-body-font-family2: 'Poppins', sans-serif;
+    --bs-body-font-weight: 580;
+    /*----background-color------------------*/
+    --back-color1: #8b44eb /*#1d1b1b*/; /*tim*/
+    --back-color2: #FFF8F2; /*white*/
+    --back-color3: #F0A35E; /*skin*/
+    --back-color4: #C1CD97; /*green /*/
+    --back-color5: #F285A2; /*pink /*/
+    --back-color6: #FFFF; /*white /*/
+    /*----text-color------------------*/
+    --text-color1: #242424; /*black*/
+    --text-color2: #FFFF; /*white*/
+    --text-color3: gray; /*gray*/
+    --text-color4: #F0A35E; /*skin*/
+    /*----FONT------------------*/
+    --bs-font-sans-serif: "SVN-Poppins", sans-serif;
+}
