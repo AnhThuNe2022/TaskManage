@@ -1,0 +1,158 @@
+﻿@{
+}
+<link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>My Schedule</h4>
+                    <div class="d-sm-flex me-2">
+                        <div class="contain-border1 me-2">
+                            <p>Số việc còn lại</p>
+                            <p>3</p>
+                        </div>
+                        <div class="contain-border2 me-2">
+                            <p>Số việc còn lại</p>
+                            <p>3</p>
+                        </div>
+                        <div class="contain-border3 ">
+                            <p>Số việc còn lại</p>
+                            <p>3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 p-2">
+                <div class="col-lg-6 ">
+                    <div class="container-boder">
+                         <canvas id="chartDoughnut"></canvas>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="col-lg-6 container-boder">
+                    <canvas id="chartBar"></canvas>
+                </div>
+            </div>
+            <div></div>
+          
+        </div>
+        
+        <div class="col-md-4 right-bar">
+            <h4>GẦN ĐÂY</h4>
+            <div class="content mt-5">
+                <div class="row mb-2">
+                    <div class="content-left col-md-3"> 
+                        <i class="bi bi-journal-bookmark"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h5>Học Tiếng Anh</h5>
+                        <div class="d-flex">
+                            <i class="bi bi-calendar-heart-fill me-2"></i>
+                            <p>2/5/2023</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="content-left col-md-3">
+                        <i class="bi bi-journal-bookmark"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h5>Học Tiếng Anh</h5>
+                        <div class="d-flex">
+                            <i class="bi bi-calendar-heart-fill me-2"></i>
+                            <p>2/5/2023</p>
+                        </div>
+
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="content-left col-md-3"> 
+                        <i class="bi bi-journal-bookmark"></i>
+                    </div>
+                    <div class="col-md-9">
+                        <h5>Học Tiếng Anh</h5>
+                        <div class="d-flex">
+                            <i class="bi bi-calendar-heart-fill me-2"></i>
+                            <p>2/5/2023</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-5">
+            <h4>NHỮNG TASK ƯU TIÊN</h4>
+            <table class="table container-boder">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên task</th>
+                        <th>Mức độ</th>
+                        <th>Ngày hết hạn</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Học tiếng Anh</td>
+                        <td>Cao</td>
+                        <td>21/07/2024</td>
+                        <td>Còn 4 tiếng</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Học tiếng Anh</td>
+                        <td>Cao</td>
+                        <td>21/07/2024</td>
+                        <td>Còn 4 tiếng</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Học tiếng Anh</td>
+                        <td>Cao</td>
+                        <td>21/07/2024</td>
+                        <td>Còn 4 tiếng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4 mt-5">
+            <div class="">
+                <h4>TASK HẾT HẠN</h4>
+                <div class="container-boder ">
+                    <div class="d-flex justify-content-between">
+                        <p>Học lập trình</p>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Học lập trình</p>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Học lập trình</p>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+</div>
+
+
+@section Scripts{
+    <script src="~/js/dashboard.js" asp-append-version="true"></script>
+
+
+}

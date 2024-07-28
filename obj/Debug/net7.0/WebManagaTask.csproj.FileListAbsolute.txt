@@ -1,0 +1,9 @@
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.csproj.AssemblyReference.cache
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.AssemblyInfoInputs.cache
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.AssemblyInfo.cs
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.csproj.CoreCompileInputs.cache
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.RazorAssemblyInfo.cache
+C:\Users\thu\source\repos\AMy project Task\WebManagaTask\obj\Debug\net7.0\WebManagaTask.RazorAssemblyInfo.cs
