@@ -1,0 +1,121 @@
+﻿.button-filter {
+    background: var(--text-color3);
+    width: fit-content;
+    padding: 5px 14px;
+    border-radius: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.board-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.board-column {
+    background-color: var(--back-color7);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 23%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .board-column h2 {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-height: 300px;
+    overflow-y: auto;
+}
+
+    .task-list li {
+        background-color: #e0e0e0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin: 5px 0;
+        padding: 10px;
+        cursor: move;
+        user-select: none;
+    }
+
+.task-detail {
+    background-color: white;
+    padding: 14px;
+    margin-bottom: 10px;
+    cursor: move;
+/*    position: relative;
+*/}
+
+.task-detail  p {
+   font-weight: 100 !important;
+ }
+ .task-detail  span {
+     color: var(--text-color5) !important;
+        
+ }
+.footer-task {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-task img {
+    height: 2rem;
+    width: 2rem;
+    border-radius:50% !important;
+
+}
+.calendar-work {
+    display: flex;
+    margin-top: 5px;
+    color: var(--text-color5) !important;
+}
+.work-type {
+    background-color: orange;
+    padding: 2px 5px;
+    width: 70%;
+    border-radius:5px;
+}
+/*----------icon-color----------------*/
+.fa-star, .calendar-work i {
+    color: coral;
+}
+.fa-square {
+    color: cadetblue;
+}
+.fa-check-circle {
+    color:cornflowerblue;
+}
+
+
+
+#dragItem {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    cursor: move;
+}
+
+#dropZone {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

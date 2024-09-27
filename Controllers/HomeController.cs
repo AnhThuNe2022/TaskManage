@@ -28,6 +28,21 @@ namespace ManagaTaskWeb.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult TaskManage()
+        {
+            return View();
+        }
+
+        public IActionResult MoneyManager()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

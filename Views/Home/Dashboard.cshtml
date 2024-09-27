@@ -41,7 +41,7 @@
         
         <div class="col-md-4 right-bar">
             <h4>GẦN ĐÂY</h4>
-            <div class="content mt-5">
+           @*  <div class="content mt-5">
                 <div class="row mb-2">
                     <div class="content-left col-md-3"> 
                         <i class="bi bi-journal-bookmark"></i>
@@ -81,8 +81,29 @@
                        
                     </div>
                 </div>
-            </div>
-           
+            </div> *@
+            <div class="calendar-container">
+                <div class="calendar-month-arrow-container">
+                    <div class="calendar-month-year-container">
+                        <select class="calendar-years"></select>
+                        <select class="calendar-months">
+                        </select>
+                    </div>
+                    <div class="calendar-month-year">
+                    </div>
+                    <div class="calendar-arrow-container">
+                        <button class="calendar-today-button"></button>
+                        <button class="calendar-left-arrow">
+                            ←
+                        </button>
+                        <button class="calendar-right-arrow"> →</button>
+                    </div>
+                </div>
+                <ul class="calendar-week">
+                </ul>
+                <ul class="calendar-days">
+                </ul>
+            </div>  
         </div>
     </div>
     <div class="row">
@@ -152,7 +173,8 @@
 
 
 @section Scripts{
-    <script src="~/js/dashboard.js" asp-append-version="true"></script>
+    <script src="~/js/dashboard.js" asp-append-version="true" defer></script>
+    <script src="~/js/calendar.js" asp-append-version="true" defer></script>
 
 
 }

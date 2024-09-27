@@ -1,0 +1,19 @@
+﻿.head-temp img {
+    position: absolute;
+    top: -192px;
+    right: -86px;
+}
+.head-temp {
+  margin-top:60px;
+}
+.grid-monthly-Expenses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:23px;
+}
+    .grid-monthly-Expenses .row:first-child {
+        padding: 10px;
+        border-radius: 25px 25px;
+        background-color: var(--back-color5);
+        background-image: linear-gradient(180deg, var(--back-color5) 10%, var(--back-color5) 100%) !important;
+    }    

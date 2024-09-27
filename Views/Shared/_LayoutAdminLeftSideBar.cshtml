@@ -1,4 +1,25 @@
-﻿ <!-- Sidebar -->
+﻿@{
+    @functions {
+
+        bool menuItemActive(string controllerName, string actionName)
+        {
+            var currentController = (string)ViewContext.RouteData.Values["controller"];
+            var currentAction = (string)ViewContext.RouteData.Values["action"];
+
+            return string.Equals(currentController, controllerName, StringComparison.OrdinalIgnoreCase) &&
+                   string.Equals(currentAction, actionName, StringComparison.OrdinalIgnoreCase);
+        }
+
+    }
+
+    string DashboardActive = menuItemActive("Home", "Dashboard") ? "active" : "";
+    string TaskManageActive = menuItemActive("Home", "TaskManage") ? "active" : "";
+    string MoneyManagerActive = menuItemActive("Home", "MoneyManager") ? "active" : "";
+
+    
+} 
+
+<!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
@@ -18,22 +39,28 @@
         </li>
 
         <!-- Nav Item - Dashboard -->
-        <li class="nav-item active">
-            <a class="nav-link" href="index">
+    <li class="nav-item @DashboardActive">
+        <a class="nav-link" href="/Home/Dashboard">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span>
             </a>
         </li>
 
-        
 
-        <li class="nav-item">
-            <a class="nav-link" href="index">
+
+    <li class="nav-item  @TaskManageActive">
+        <a class="nav-link" href="/Home/TaskManage">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Task Manager</span>
+            <span>Task Manager</span>
             </a>
         </li>
 
+    <li class="nav-item  @MoneyManagerActive">
+        <a class="nav-link" href="/Home/MoneyManager">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Money Manager</span>
+        </a>
+    </li>
     
 
         <!-- Divider -->

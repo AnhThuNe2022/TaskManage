@@ -1,0 +1,99 @@
+﻿@{
+}
+<link rel="stylesheet" href="~/css/taskManage.css" asp-append-version="true" />
+
+<div>
+    <div class="button-filter">
+        <i class="far fa-calendar"></i>
+        <span>12/3 - 12/5</span>
+        <i class="fas fa-times"></i>
+    </div>
+
+
+
+</div>
+<div>
+
+    <div class="board-container">
+        <div class="board-column col-3" id="backlog">
+            <h2>Cần lam</h2>
+            <div class="task-list" id="backlog-tasks">
+                <div class="task-detail">
+                    <p>Viết code thực hành C trên web task manage</p>
+                    <div class="work-type">
+                        Làm việc
+                    </div>
+                    <div class="footer-task">
+                        <div>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <span>TIS-15</span>
+                            <img src="https://res.cloudinary.com/dcpbdkeam/image/upload/v1716221322/WebASP/img/feedback5.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-detail">
+                    <p>Viết code thực hành C trên web task manage</p>
+                    <div class="work-type">
+                        Làm việc
+                    </div>
+                    <div class="footer-task">
+                        <div>
+                            <i class="fa fa-square" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <span>TIS-15</span>
+                            <img src="https://res.cloudinary.com/dcpbdkeam/image/upload/v1716221322/WebASP/img/feedback5.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="task-detail">
+                    <div class="calendar-work">
+                        <i class="far fa-calendar mr-2"></i>
+                        <p>20/08/2024</p>
+                    </div>
+                    <p>Viết code thực hành C trên web task manage</p>
+                    <div class="work-type">
+                        Làm việc
+                    </div>
+
+                    <div class="footer-task">
+                        <div>
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+                        </div>
+                        <div>
+                            <span>TIS-15</span>
+                            <img src="https://res.cloudinary.com/dcpbdkeam/image/upload/v1716221322/WebASP/img/feedback5.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="board-column col-3" id="in-progress">
+            <h2>Đang làm</h2>
+            <div class="task-list" id="in-progress-tasks"></div>
+        </div>
+        <div class="board-column col-3" id="review">
+            <h2>Đang kiểm tra</h2>
+            <div class="task-list" id="review-tasks"></div>
+        </div>
+        <div class="board-column col-3" id="done">
+            <h2>Hoàn thành</h2>
+            <div class="task-list" id="done-tasks"></div>
+        </div>
+    </div>
+
+</div>
+
+<div id="dragItem" draggable="true">Kéo tôi</div>
+<div id="dropZone">Thả vào đây</div>
+
+
+@section Scripts{
+    <script src="~/js/taskManage.js" asp-append-version="true" defer></script>
+
+}
