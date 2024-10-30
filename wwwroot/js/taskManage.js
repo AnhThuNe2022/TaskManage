@@ -74,7 +74,28 @@ function copyElementRect(elem) {
         right: rect.right
     };
 }
-//dropZone.appendChild(currentDragItem); // Thêm item vào drop zone
 
-// Thêm sự kiện cho tất cả drop zones
 
+
+
+function addTask(type) {
+    $("#addModal").modal('show');
+
+    $('#addModal').on('hidden.bs.modal', function (e) {
+    });
+    $('#confirmYesButtonAddModal').off('click').on('click', function (event) {
+        event.preventDefault();
+        $('#addModal').modal('hide');
+    });
+}
+
+function addCategory() {
+    $("#ModalCategoryAdd").modal('show');
+
+    $('#ModalCategoryAdd').on('hidden.bs.modal', function (e) {
+    });
+    $('#confirmYesButtonAddModals').off('click').on('click', function (event) {
+        event.preventDefault();
+        $('#addModal').modal('hide');
+    });
+}

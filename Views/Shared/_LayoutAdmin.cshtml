@@ -70,6 +70,8 @@
         </div>
     </div>
     <!-- MODAL ALERT -->
+    <!-- Page level custom Modal -->
+    @await RenderSectionAsync("Modal", required: false)
     <!-- MODAL -->
 
     <!-- Page Wrapper -->
@@ -136,8 +138,8 @@
         </div>
     </div>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Page level custom scripts -->
-
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
