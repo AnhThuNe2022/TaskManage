@@ -11,7 +11,7 @@ namespace WebManagaTask.Models
         public int UserId { get; set; } 
         public string? Title { get; set; } 
         public string? Description { get; set; }
-        /// <summary>0:Unsuccess 1:success </summary>
+        /// <summary>0:Unsuccess 1:success </summary>...
         public int Status { get; set; }  
         public int Priority { get; set; }
         public int? CategoryId { get; set; }
