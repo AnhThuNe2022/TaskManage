@@ -7,7 +7,7 @@ h4 {
     color: var(--text-color4);
 }
 th {
-    color: var(--text-color3);
+    color: var(--text-color5);
 }
 td{
 
@@ -80,6 +80,15 @@ li.nav-item.active {
     background-color: var(--back-color4);
     background-image: linear-gradient(180deg, var(--back-color4) 10%, var(--back-color4) 100%) !important;
 }
+.contain-border4 {
+    padding: 20px;
+    width: 33.3%;
+    font-weight: 600;
+    border-radius: 25px 25px;
+    color: var(--text-color2);
+    background-color: var(--back-color8);
+    background-image: linear-gradient(180deg, var(--back-color8) 10%, var(--back-color8) 100%) !important;
+}
 .right-bar .content .content-left {
     background: var(--back-color4);
     display: flex;
@@ -108,6 +117,14 @@ li.nav-item.active {
     box-sizing: border-box;
     border-radius: 25px 25px;
 }
+.item-choose:hover {
+    background: var(--back-color7);
+    cursor : pointer;
+}
+.item-choose > *{
+    margin : 7px;
+}
+
 :root {
     --bs-body-font-family2: 'Poppins', sans-serif;
     --bs-body-font-weight: 580;
@@ -118,11 +135,15 @@ li.nav-item.active {
     --back-color4: #C1CD97; /*green /*/
     --back-color5: #F285A2; /*pink /*/
     --back-color6: #FFFF; /*white /*/
+    --back-color7: #dcdbdb; /*gray /*/
+    --back-color8: #382FA3; /*g /*/
+    --back-color9: #FFFF; /*white /*/
     /*----text-color------------------*/
     --text-color1: #242424; /*black*/
     --text-color2: #FFFF; /*white*/
-    --text-color3: gray; /*gray*/
+    --text-color3: #dcdbdb; /*gray*/
     --text-color4: #F0A35E; /*skin*/
+    --text-color5: gray; /*gray*/
     /*----FONT------------------*/
     --bs-font-sans-serif: "SVN-Poppins", sans-serif;
 }

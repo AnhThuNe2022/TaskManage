@@ -1,0 +1,268 @@
+﻿@{
+    //var paramValue = HttpContext.Request.Query["paramName"];
+}
+<link rel="stylesheet" href="~/css/taskManage.css" asp-append-version="true" />
+
+<div>
+    <ul class="nav nav-tabs tab-sections" role="tablist">
+        <li class="tab-item">
+            <a class="tab-link expand-on-hover active" href="#dashboard" role="tab" data-toggle="tab" aria-selected="true">Dashboard</a>
+        </li>
+        <li class="tab-item">
+            <a class="tab-link expand-on-hover" href="#timeLine" role="tab" data-toggle="tab" aria-selected="true">TimeLine</a>
+        </li>
+        <li class="tab-item">
+            <a class="tab-link expand-on-hover" href="#listView" role="tab" data-toggle="tab" aria-selected="true">List View</a>
+        </li>
+    </ul>
+ @*    <div class="button-filter">
+        <i class="far fa-calendar"></i>
+        <span>12/3 - 12/5</span>
+        <i class="fas fa-times"></i>
+    </div> *@
+  
+</div>
+<div class="tab-content" id="getChannelProfile">
+    <div class="tab-pane fade active show" id="dashboard" role="tabpanel">
+        <div class="board-container">
+            <div class="board-column col-3" id="backlog">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <h2 class="mr-1">Cần làm</h2>
+                        <h2 class="numberTask">10</h2>
+                    </div>
+                    <p class="add-task" onclick="addTask(1)">+</p>
+                </div>
+                <div class="task-list" id="backlog-tasks">
+                    <div class="task-detail">
+                        <p>Viết code thực hành C trên web task manage</p>
+                        <div class="work-type">
+                            Làm việc
+                        </div>
+                        <div class="footer-task">
+                            <div>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <span>TIS-15</span>
+                                <img src="https://res.cloudinary.com/dcpbdkeam/image/upload/v1716221322/WebASP/img/feedback5.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="task-detail">
+                        <p>Viết code thực hành C trên web task manage</p>
+                        <div class="work-type">
+                            Làm việc
+                        </div>
+                        <div class="footer-task">
+                            <div>
+                                <i class="fa fa-square" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <span>TIS-15</span>
+                                <img src="https://res.cloudinary.com/dcpbdkeam/image/upload/v1716221322/WebASP/img/feedback5.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="task-detail">
+                        <div class="calendar-work">
+                            <i class="far fa-calendar mr-2"></i>
+                            <p>20/08/2024</p>
+                        </div>
+                        <p>Viết code thực hành C trên web task manage</p>
+                        <div class="work-type">
+                            Làm việc
+                        </div>
+
+                        <div class="footer-task">
+                            <div>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+                            </div>
+                            <div>
+                                <span>TIS-15</span>
+                                <img src="https://res.cloudinary.com/dcpbdkeam/image/upload/v1716221322/WebASP/img/feedback5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="board-column col-3" id="in-progress">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <h2 class="mr-1">Đang làm</h2>
+                        <h2 class="numberTask">10</h2>
+                    </div>
+                    <p class="add-task">+</p>
+                </div>
+                <div class="task-list" id="in-progress-tasks"></div>
+            </div>
+            <div class="board-column col-3" id="review">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <h2 class="mr-1">Đang kiểm tra</h2>
+                        <h2 class="numberTask">10</h2>
+                    </div>
+                    <p class="add-task">+</p>
+                </div>
+
+                <div class="task-list" id="review-tasks"></div>
+            </div>
+            <div class="board-column col-3" id="done">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <h2 class="mr-1">Hoàn thành</h2>
+                        <h2 class="numberTask">10</h2>
+                    </div>
+                    <p class="add-task">+</p>
+                </div>
+
+                <div class="task-list" id="done-tasks"></div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="timeLine" role="tabpanel">
+       <h3>hd</h3>
+    </div>
+    <div class="tab-pane fade" id="listView" role="tabpanel">
+    </div>
+</div>
+<div>
+
+    <div role="tablist" aria-label="Example Tab List">
+        <button role="tab" aria-selected="true" aria-controls="tab1" id="tab1">Tab 1</button>
+        <button role="tab" aria-selected="false" aria-controls="tab2" id="tab2">Tab 2</button>
+        <button role="tab" aria-selected="false" aria-controls="tab3" id="tab3">Tab 3</button>
+    </div>
+
+    <div role="tabpanel" id="tab1" aria-labelledby="tab1">
+        <p>Nội dung cho Tab 1.</p>
+    </div>
+    <div role="tabpanel" id="tab2" aria-labelledby="tab2" hidden>
+        <p>Nội dung cho Tab 2.</p>
+    </div>
+    <div role="tabpanel" id="tab3" aria-labelledby="tab3" hidden>
+        <p>Nội dung cho Tab 3.</p>
+    </div>
+
+</div>
+@section Modal{
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <label>Tiêu đề</label>
+                            <input class="none-line w-100" />
+                            <label>Mô tả</label>
+                            <textarea rows="4" cols="50" placeholder="Nhập văn bản ở đây..."></textarea>
+                             <label for="fruits">Chọn thể loại Task:</label>
+                            <input type="text" onkeypress="return false;" onclick="addCategory()">
+                           
+                        </div>
+                        <div class="col-5">
+                            <label>Mức ưu tiên</label>
+                            <select class="inputRound" name="options">
+                                <option class="optionPriority" value="option1">Thấp</option>
+                                <option class="optionPriority" value="option2">Trung bình</option>
+                                <option class="optionPriority" value="option3">Cao</option>
+                            </select>
+                            <div class="buttonPriority" id="buttonPriority">Let's complete!</div>
+                            <label>Hạn</label>
+                            <input type="date" class="inputRound" value="2017-01-01" min="2005-01-01" max="2019-01-01">
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalCategoryAdd" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-2">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#choose" role="tab">Chọn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#addCategory" role="tab">Thêm</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-2">
+                            <div id="choose" class="tab-pane fade show active" role="tabpanel">
+                                <input class="form-control" placeholder="search" />
+                                <br />
+                                <div class="mt-2">
+                                    <div class="d-flex align-items-center item-choose">
+                                        <i class="bi bi-bag-dash"></i>
+                                        <p class="ml-2 mb-0">Công việc</p>
+                                    </div>
+                                    <div class="d-flex align-items-center item-choose">
+                                        <i class="bi bi-bag-dash"></i>
+                                        <p class="ml-2 mb-0">Công việc</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="addCategory" class="tab-pane fade" role="tabpanel">
+                                <input class="none-line w-100" placeholder="Title" />
+                                <div>
+                                    <div class="d-flex">
+                                        <div class="cate-color" style="background:#2BA7E0"></div>
+                                        <div class="cate-color" style="background:#4070F5"></div>
+                                        <div class="cate-color" style="background:#6A4FF7"></div>
+                                        <div class="cate-color" style="background:#9346E8"></div>
+                                        <div class="cate-color" style="background:#9136B8"></div>
+                                        <div class="cate-color" style="background:#CC63D6"></div>
+                                        <div class="cate-color" style="background:#D85499"></div>
+                                        <div class="cate-color" style="background:#FC8BA8"></div>
+
+                                    </div>
+                                
+                                    <div class="d-flex">
+                                        <div class="cate-color" style="background:#D70051"></div>
+                                        <div class="cate-color" style="background:#EA3D32"></div>
+                                        <div class="cate-color" style="background:#FA8D2F"></div>
+                                        <div class="cate-color" style="background:#F4CE2B"></div>
+                                        <div class="cate-color" style="background:#92CB00"></div>
+                                        <div class="cate-color" style="background:#63D26F"></div>
+                                        <div class="cate-color" style="background:#37C5AB"></div>
+                                        <div class="cate-color" style="background:#87979F"></div>
+
+
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+}
+@section Scripts{
+    <script src="~/js/taskManage.js" asp-append-version="true" defer></script>
+
+}

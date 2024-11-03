@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FirebaseAdmin;
+using Google.Apis.Auth.OAuth2;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebManagaTask.Data;
 using WebManagaTask.Models;
@@ -17,8 +19,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //builder.Services.AddScoped<EmployeeInterface, EmployeeRepository>();
 //builder.Services.AddScoped<OrderInterface, OrderRepository>();
 
-
-
+FirebaseApp.Create(new AppOptions()
+{
+    Credential = GoogleCredential.FromFile("File/task-manager-login-9eca8-firebase.json"),
+});
 
 
 //builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -39,6 +43,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 
 builder.Services.AddRazorPages();
 builder.Services.AddMvc();
+builder.Services.AddControllers();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
