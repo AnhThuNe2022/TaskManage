@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/WebManagaTask/FileContentIndex/84a945aa-7f00-4750-99c9-1041585ff2e4.vsidx
+/bin/Debug/net7.0/File/task-manager-login-9eca8-firebase.json
