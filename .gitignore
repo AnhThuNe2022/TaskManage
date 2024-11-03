@@ -18,7 +18,6 @@ obj/
 
 *.vsidx
 *.v2
-*.cs
 *.bin
 *.txt
 /obj/Debug/net7.0/project.razor.vs.json
