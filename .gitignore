@@ -2,5 +2,39 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/WebManagaTask/FileContentIndex/84a945aa-7f00-4750-99c9-1041585ff2e4.vsidx
-/bin/Debug/net7.0/File/task-manager-login-9eca8-firebase.json
+# Bỏ qua tất cả các tệp .dll
+*.dll
+
+# Bỏ qua thư mục bin và obj
+bin/
+obj/
+
+# Bỏ qua các tệp cấu hình người dùng
+*.user
+*.suo
+
+# Bỏ qua các tệp log
+*.log
+
+*.vsidx
+*.v2
+*.cs
+*.bin
+*.txt
+/obj/Debug/net7.0/project.razor.vs.json
+*.json
+/obj/Debug/net7.0/WebManagaTask.csproj.AssemblyReference.cache
+/obj/Debug/net7.0/WebManagaTask.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net7.0/WebManagaTask.assets.cache
+*.vsidx
+*.cache
+*.v2
+*.bin
+/obj/Debug/net7.0/WebManagaTask.RazorAssemblyInfo.cs
+/obj/WebManagaTask.csproj.nuget.dgspec.json
+/obj/Debug/net7.0/WebManagaTask.csproj.FileListAbsolute.txt
+/obj/Debug/net7.0/WebManagaTask.csproj.CoreCompileInputs.cache
+/obj/Debug/net7.0/WebManagaTask.csproj.AssemblyReference.cache
+/obj/Debug/net7.0/WebManagaTask.assets.cache
+/obj/Debug/net7.0/WebManagaTask.AssemblyInfo.cs
+/obj/Debug/net7.0/project.razor.vs.json
