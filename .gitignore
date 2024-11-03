@@ -37,3 +37,6 @@ obj/
 /obj/Debug/net7.0/WebManagaTask.assets.cache
 /obj/Debug/net7.0/WebManagaTask.AssemblyInfo.cs
 /obj/Debug/net7.0/project.razor.vs.json
+/obj/Debug/net7.0/WebManagaTask.AssemblyInfoInputs.cache
+/obj/Debug/net7.0/WebManagaTask.RazorAssemblyInfo.cache
+
