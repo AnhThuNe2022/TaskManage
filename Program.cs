@@ -19,10 +19,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //builder.Services.AddScoped<EmployeeInterface, EmployeeRepository>();
 //builder.Services.AddScoped<OrderInterface, OrderRepository>();
 
-FirebaseApp.Create(new AppOptions()
+/*FirebaseApp.Create(new AppOptions()
 {
     Credential = GoogleCredential.FromFile("File/task-manager-login-9eca8-firebase.json"),
-});
+});*/
 
 
 //builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

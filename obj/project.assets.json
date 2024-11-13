@@ -4114,24 +4114,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\NguyenThiNgocNhi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thu\\source\\repos\\AMy project Task\\New folder\\TaskManage\\WebManagaTask.csproj",
+      "projectUniqueName": "D:\\Project_with_AT\\TaskManage\\WebManagaTask.csproj",
       "projectName": "WebManagaTask",
-      "projectPath": "C:\\Users\\thu\\source\\repos\\AMy project Task\\New folder\\TaskManage\\WebManagaTask.csproj",
-      "packagesPath": "C:\\Users\\thu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thu\\source\\repos\\AMy project Task\\New folder\\TaskManage\\obj\\",
+      "projectPath": "D:\\Project_with_AT\\TaskManage\\WebManagaTask.csproj",
+      "packagesPath": "C:\\Users\\NguyenThiNgocNhi\\.nuget\\packages\\",
+      "outputPath": "D:\\Project_with_AT\\TaskManage\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\thu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\NguyenThiNgocNhi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4139,6 +4134,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4151,6 +4147,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4205,7 +4206,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

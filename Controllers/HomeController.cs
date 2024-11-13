@@ -33,6 +33,11 @@ namespace ManagaTaskWeb.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
         public IActionResult TaskManage()
         {
             return View();

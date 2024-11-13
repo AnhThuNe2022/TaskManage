@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <!-- Custom styles for this template-->
+    <link href="~/css/register.css" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Create a new account</h2>
+        <p>It's quick and easy</p>
+        <form action="/register" method="POST">
+            <div class="input-container">
+                <label class="label-small" for="first-name">First Name</label>
+                <input class="form-input label-small" type="text" id="first-name" name="first-name" placeholder="First name" required>
+
+                <label class="label-small" for="surname">Surname</label>
+                <input id="surname" class="form-input label-small" type="text" id="surname" name="surname" placeholder="Surname" required>
+            </div>
+            <label for="contact-info" class="label-small">Email address</label>
+            <input type="text" id="contact-info" name="contact-info" placeholder="Enter your email address" required>
+            <label for="password" class="label-small">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <label for="confirm-password" class="label-small">Confirm password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div >
+            <a href="/Home/Login">Already have an account?</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

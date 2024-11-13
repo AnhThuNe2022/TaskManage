@@ -1,69 +1,221 @@
-﻿.login-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    /* background: rgba(0, 0, 0, .5); */
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgb(239 239 239 / 60%);
-    border-radius: 10px;
+﻿
+
+
+/* CSS cho trang đăng nhập */
+:root {
+    --bs-body-font-family2: 'Poppins', sans-serif;
+    --bs-body-font-weight: 580;
+    /*----background-color------------------*/
+    --back-color1: #8b44eb; /*purple*/
+    --back-color2: #FFF8F2; /*soft white*/
+    --back-color3: #F0A35E; /*peach*/
+    --back-color4: #C1CD97; /*soft green*/
+    --back-color5: #F285A2; /*light pink*/
+    --back-color6: #FFFFFF; /*white*/
+    --back-color7: #dcdbdb; /*light gray*/
+    --back-color8: #382FA3; /*deep blue*/
+    --back-color9: #FFFFFF; /*white*/
+    /*----text-color------------------*/
+    --text-color1: #242424; /*black*/
+    --text-color2: #FFFFFF; /*white*/
+    --text-color3: #757575; /*medium gray*/
+    --text-color4: #F0A35E; /*peach*/
+    --text-color5: #9e9e9e; /*gray*/
+    --text-color6: #FFAF66;
+    --text-color7: #6a11cb; /*tím*/
+    /*----border-color------------------*/
+    --border-color1: #242424; /*light gray*/
+    /*----FONT------------------*/
+    --bs-font-sans-serif: "SVN-Poppins", sans-serif;
 }
 
-    .login-box h2 {
-        margin: 0 0 30px;
-        padding: 0;
-        color: #fff;
-        text-align: center;
+body {
+    font-family: var(--bs-body-font-family2);
+    background-color: var(--back-color1);
+    color: var(--text-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: var(--back-color2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: var(--text-color1);
+}
+
+    .login-header h2:nth-of-type(1) {
+        color: var(--back-color8);
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 
-    .login-box .user-box {
-        position: relative;
+    .login-header p {
+        color: var(--text-color6);
+        margin-bottom: 20px;
     }
 
-        .login-box .user-box input {
-            width: 100%;
-            padding: 10px 0;
-            font-size: 16px;
-            color: #fff;
-            margin-bottom: 30px;
-            border: none;
-            border-bottom: 1px solid #fff;
-            outline: none;
-            background: transparent;
-        }
 
-        .login-box .user-box label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 10px 0;
-            font-size: 16px;
-            color: #fff;
-            pointer-events: none;
-            transition: .5s;
-        }
 
-        .login-box .user-box input:focus ~ label,
-        .login-box .user-box input:valid ~ label,
-        .login-box .user-box input:not(:placeholder-shown) ~ label {
-            top: -33px;
-            left: 0;
-            color: #03e9f4;
-            font-size: 12px;
-        }
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+   
+}
 
-    .login-box form a {
-        position: relative;
-        display: inline-block;
-        padding: 10px 20px;
-        color: #03e9f4;
-        font-size: 16px;
-        text-decoration: none;
-        text-transform: uppercase;
-        overflow: hidden;
-        transition: .5s;
-        margin-top: 40px;
-        letter-spacing: 4px
+
+.btn {
+    border: 0.5px solid #bfbfbf;
+    background-color: var(--back-color9);
+    color: var(--text-color1);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-user {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 25px;
+    /*border: none;*/
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+
+.btn-user:hover {
+        background-color: var(--text-color5);
     }
+
+.linkedin-icon {
+    margin-right: 4px;
+}
+
+
+
+.btn-google {
+}
+
+    .btn-google:hover {
+        background-color: var(--text-color5);
+    }
+
+
+.google-icon {
+    width: 18px; 
+    height: 18px; 
+    display: block; 
+    fill: inherit; 
+    flex-shrink: 0; 
+    margin-right: 4px;
+}
+
+.btn-facebook {
+    
+}
+
+    .btn-facebook:hover {
+        background-color: var(--text-color5);
+    }
+
+.facebook-icon {
+    margin-right: 4px;
+}
+
+.btn-primary {
+    background-color: #6a8e2a;
+    color: var(--text-color2);
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: block; /* Đảm bảo nút chiếm toàn bộ chiều rộng trong container */
+    margin: 0 auto; /* Căn giữa nút trong container */
+    padding-left: 2rem; /* Đặt khoảng cách trái phải để nút trông đều hai bên */
+    padding-right: 2rem;
+}
+
+
+.btn-primary:hover {
+    background-color: #55771e;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+.label-small {
+    font-size: 0.7rem; /* Thiết lập cỡ chữ cho tất cả label và link */
+    color: var(--text-color5);
+    
+}
+.fg {
+    font-size: 0.7rem; /* Thiết lập cỡ chữ cho tất cả label và link */
+    color: var(--text-color5);
+    margin-left: 70px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.small {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--text-color7);
+}
+
+
+
+.form-control {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid var(--back-color7);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+    .form-control:focus {
+        outline: none;
+        /*border-color: var(--back-color3);*/
+    }
+
+
+
+
+.bg-gradient-primary {
+    background: linear-gradient(90deg, var(--back-color1) 0%, var(--back-color8) 100%);
+}
+
+/* Responsive CSS */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .btn-user, .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+
+    
